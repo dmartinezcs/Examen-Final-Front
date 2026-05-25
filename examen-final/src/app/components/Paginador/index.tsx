@@ -17,31 +17,14 @@ const Paginador = ({next,prev,page,setPage}: {
             {page>1 && <div className="pageContainer"><h1 onClick={()=>{
                 setPage(1);
             }}>{1}</h1></div>}
-            
             {page>2 && <div className="pageContainer"><h1 onClick={()=>{
                 setPage(2);
             }}>{2}</h1></div>}
             {page>3 && <div className="pageContainer"><h1 onClick={()=>{
                 setPage(3);
             }}>{3}</h1></div>}
-            {page==41 && <div className="pageContainer"><h1 onClick={()=>{
-                setPage(40);
-            }}>{40}</h1></div>}
-            {page==42 && <div className="pageContainer"><h1 onClick={()=>{
-                setPage(41);
-            }}>{41}</h1></div>}
            
             <h1>{page}</h1>
-            {page==1 && <div className="pageContainer"><h1 onClick={()=>{
-                setPage(2);
-            }}>{2}</h1></div>}
-            {page==1 && <div className="pageContainer"><h1 onClick={()=>{
-                setPage(3);
-            }}>{3}</h1></div>}
-            {page==2 && <div className="pageContainer"><h1 onClick={()=>{
-                setPage(3);
-            }}>{3}</h1></div>}
-            
 
             {page<40 && <div className="pageContainer"><h1 onClick={()=>{
                 setPage(40);
